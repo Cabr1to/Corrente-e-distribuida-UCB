@@ -3,6 +3,7 @@ import psutil
 
 processos = psutil.process_iter(['pid', 'name', 'status'])
 
+#ordenar pelo nome
 processos_ordenados = sorted(processos, key=lambda p: p.info['name'])
 
 
